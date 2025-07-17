@@ -2,58 +2,87 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Sitio oficial del Estado de Rashnara. Información gubernamental, institucional y diplomática." />
   <title>Gobierno del Estado de Rashnara</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      background-color: #f4f6f8;
+      margin: 0; padding: 0;
+      background-color: #f9f9f9;
       color: #1a1a1a;
+      line-height: 1.6;
     }
     header {
-      background-color: #002147;
+      background-color: #003366;
       color: white;
-      padding: 1rem;
+      padding: 1rem 2rem;
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
     }
     header img {
       height: 60px;
       margin-right: 1rem;
     }
+    header h1 {
+      font-weight: 700;
+      margin: 0;
+    }
+    nav {
+      margin-left: auto;
+      display: flex;
+      flex-wrap: wrap;
+    }
     nav a {
-      margin: 0 1rem;
+      margin: 0 0.8rem;
       color: white;
       text-decoration: none;
       font-weight: bold;
+      padding: 0.3rem 0;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #66b3ff;
     }
     main {
-      padding: 2rem;
-      line-height: 1.6;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
     }
     section {
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
     }
-    footer {
-      background-color: #002147;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
+    h2 {
+      border-bottom: 2px solid #003366;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+      color: #003366;
+    }
+    ul {
+      padding-left: 1.4rem;
     }
     .button-download {
       display: inline-block;
-      margin-top: 1rem;
+      margin: 1rem 0;
       padding: 0.5rem 1rem;
       background-color: #0055aa;
       color: white;
       text-decoration: none;
-      border-radius: 4px;
+      border-radius: 5px;
+      font-weight: 600;
     }
-    ul {
-      padding-left: 1.5rem;
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 1rem 1rem;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+    /* Scroll smooth */
+    html {
+      scroll-behavior: smooth;
     }
   </style>
 </head>
@@ -61,65 +90,29 @@
   <header>
     <img src="escudo-rashnara.png" alt="Escudo de Rashnara" />
     <h1>Gobierno del Estado de Rashnara</h1>
-    <nav style="margin-left: auto;">
+    <nav>
       <a href="#inicio">Inicio</a>
       <a href="#gobierno">Gobierno</a>
+      <a href="#ministerios">Ministerios</a>
+      <a href="#noticias">Noticias</a>
       <a href="#constitucion">Constitución</a>
+      <a href="#embajada">Embajada</a>
       <a href="#contacto">Contacto</a>
     </nav>
   </header>
 
   <main>
     <section id="inicio">
-      <h2>Bienvenido al sitio oficial del Estado de Rashnara</h2>
+      <h2>Bienvenido al Estado de Rashnara</h2>
       <p>
-        Rashnara es una nación emergente con base en el territorio no reclamado de Bir Tawil y presencia funcional en suelo español. Fundada sobre los principios del respeto mutuo, la legalidad internacional y los derechos humanos, su objetivo es crear una sociedad moderna, autosostenible y pacífica.
+        Rashnara es una nación emergente con base en el territorio no reclamado de Bir Tawil y presencia funcional en suelo español.
+        Fundada sobre principios de respeto mutuo, legalidad internacional y derechos humanos, nuestro objetivo es construir una sociedad moderna, autosostenible y pacífica.
       </p>
+      <p><strong>Gobierno:</strong> Encabezado por el Presidente Fundador y un Consejo de Ministros que dirigen diferentes áreas.</p>
+      <p><strong>Ministerios destacados:</strong> Interior, Defensa, Educación, Sanidad, Justicia, Economía, Cultura, Ciencia y más.</p>
     </section>
 
     <section id="gobierno">
       <h2>Gobierno</h2>
       <p>
-        El Estado de Rashnara está liderado por su <strong>Presidente Vitalicio Fundador</strong>, acompañado por un Consejo de Ministros con funciones ejecutivas, técnicas y diplomáticas.
-      </p>
-      <p>Los ministerios activos incluyen:</p>
-      <ul>
-        <li>Ministerio del Interior</li>
-        <li>Ministerio de Defensa</li>
-        <li>Ministerio de Educación</li>
-        <li>Ministerio de Sanidad</li>
-        <li>Ministerio de Justicia</li>
-        <li>Ministerio de Economía</li>
-        <li>Ministerio de Infraestructura</li>
-        <li>Ministerio de Cultura</li>
-        <li>Ministerio de Ciencia</li>
-        <li>Ministerio de Medios y Comunicación</li>
-        <li>Ministerio de Ciudadanía</li>
-      </ul>
-    </section>
-
-    <section id="constitucion">
-      <h2>Constitución Nacional</h2>
-      <p>
-        Nuestra Constitución respeta los derechos humanos, la legalidad internacional y las leyes de los países anfitriones como España. Garantiza la soberanía simbólica, la dignidad individual y la convivencia armónica.
-      </p>
-      <a class="button-download" href="constitucion-rashnara.pdf" download>Descargar Constitución PDF</a>
-    </section>
-
-    <section id="contacto">
-      <h2>Contacto oficial</h2>
-      <p>
-        Para cuestiones diplomáticas, legales o administrativas, puede contactar con el Gobierno de Rashnara:
-      </p>
-      <ul>
-        <li><strong>Email oficial:</strong> <a href="mailto:gobierno.rashnara@gmail.com">gobierno.rashnara@gmail.com</a></li>
-        <li><strong>Próximamente:</strong> Embajada digital, formularios de ciudadanía y documentos públicos accesibles.</li>
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 Estado de Rashnara — Todos los derechos reservados. | Sitio oficial gubernamental</p>
-  </footer>
-</body>
-</html>
+        El Estado de Rashnara está presidido por su <strong>Presidente Fundador</strong>, quien cuenta con el apoyo del Consejo de Minis
